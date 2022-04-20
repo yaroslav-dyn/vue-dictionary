@@ -11,6 +11,8 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
     "types": [
       "webpack-env"
     ],

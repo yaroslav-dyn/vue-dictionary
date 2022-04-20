@@ -1,6 +1,7 @@
 import Vue from "vue"
 import VueRouter, { RouteConfig } from "vue-router"
 import DictionaryIndex from "../Dictionary/DictionaryIndex.vue"
+import dayjs from "dayjs";
 
 Vue.use(VueRouter)
 
@@ -29,3 +30,9 @@ const router = new VueRouter({
 })
 
 export default router
+
+Vue.filter('formatDate', function (value:string, format:string ) {
+  if (!value) return ''
+  return dayjs(value).format(format)
+})
+
