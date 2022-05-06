@@ -2,9 +2,11 @@ export const apiService = {
      getTranslate
 };
 
+const ENV_API_KEY = process.env.VUE_APP_RAPID_KEY;
+
 const headers = {
     "x-rapidapi-host": "mashape-community-urban-dictionary",
-    "x-rapidapi-key": "KB5e7ZbqyKmshXFLZRFguVieeyePp1BhDXPjsnvByN3nYiesPM"
+    "x-rapidapi-key": ENV_API_KEY
 }
 
 
